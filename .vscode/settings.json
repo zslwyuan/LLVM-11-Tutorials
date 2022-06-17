@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.inc": "cpp",
+        "string": "cpp"
+    },
+    "editor.formatOnSave": true
+}
