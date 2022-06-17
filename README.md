@@ -27,7 +27,7 @@ Please note that all the experiments are built with **LLVM-11.0.0**.  In this bl
  
 ## [How to use this blog](https://github.com/zslwyuan/LLVM-11-Tutorials#how-to-use-this-blog)
 
-1. download the blog (entire project) and install LLVM-9.0.0. If you get problems during install LLVM, I suggest you to use **[the LLVM package with my install shell script](https://github.com/zslwyuan/LLVM-9-for-Light-HLS)**.
+1. download the blog (entire project) and install LLVM-11.0.0.
 2. basic functiones and passes are implemented in the directory **["Implementations"](https://github.com/zslwyuan/LLVM-11-Tutorials/tree/master/Implementations)**. Nearly all the directories have their own README file to explain the directory.
 3. experiments are tested in the directory **["Test"](https://github.com/zslwyuan/LLVM-11-Tutorials/tree/master/Tests)**.
 4. by making a "build" directory and using CMake in each experiment directory (e.g. **[this one](https://github.com/zslwyuan/LLVM-11-Tutorials/tree/master/Tests/LLVM_exp5_SimpleTimingAnalysis/)**), executable can be generated and tried. (hint: cmake .. & make) 
@@ -107,7 +107,7 @@ Please note that all the experiments are built with **LLVM-11.0.0**.  In this bl
       --- Front-End Operation, AST Consumer, Visit Nodes in AST, Clang, Template Detection
 
 
-**Experiment 11**: (Patch-Applied) Hack on Clang to properly map arbitary precision integer ap\_int<X> in source code for VivadoHLS into iX in IR generation  (Front-end Operation: CodeGen) **[TEST CODE](https://github.com/zslwyuan/LLVM-11-Tutorials/tree/master/Tests/LLVM_expAPINT_test)**. Since a patch for LLVM-9 necessary for this tutorial is still under the review of LLVM, **[complete source code of LLVM for this tutorial](https://github.com/zslwyuan/LLVM-9-for-Light-HLS)** can be downloaded via github in case that you cannot make the patch work properly. Example of declaring arbitrary precision integer variables is shown [here](https://github.com/zslwyuan/LLVM-11-Tutorials/tree/master/App/2dloop2darray_pl_apint).
+**Experiment 11**: (Patch-Applied) Hack on Clang to properly map arbitary precision integer ap\_int<X> in source code for VivadoHLS into iX in IR generation  (Front-end Operation: CodeGen) **[TEST CODE](https://github.com/zslwyuan/LLVM-11-Tutorials/tree/master/Tests/LLVM_expAPINT_test)**.  Example of declaring arbitrary precision integer variables is shown [here](https://github.com/zslwyuan/LLVM-11-Tutorials/tree/master/App/2dloop2darray_pl_apint). WARNING: applying the patch is RISKY!!!!
 
       --- CodeGen Operation, AST Consumer, Visit Nodes in AST, Clang
       --- The original way I implement is too ugly and I applied the patch which Erich Keane shared via maillist clang-cfe.
