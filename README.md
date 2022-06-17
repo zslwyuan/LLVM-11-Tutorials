@@ -1,4 +1,4 @@
-# LLVM-11.0-Learner-Tutorial
+# LLVM-11.0-Tutorial
 
 A blog for LLVM(v11.0.0) beginner, step by step, with detailed documents and comments. This blog records the way I learn LLVM and finnaly accomplish a complete project with it. Therefore, I will keep updating this blog according to the progress of my project. Currently, my target is to implement a source code optimizer. I am happy to discuss and any suggestion will be welcome ^_^ (tliang@ust.hk). ~If this blog is useful for you, a STAR will be encouragement to me. LOL~ 
 
